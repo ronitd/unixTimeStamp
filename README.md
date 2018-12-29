@@ -1,88 +1,28 @@
-# Project Title
+# Unix Time
 
-One Paragraph of project description goes here
+Given year, month, day, hour, min and sec in an array this method returns the unix time. 
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
+Pass a an 2D array containing the dates and times as shown
+[[YYYY, MM, DD, HH, MinMin, SS],....,[YYYY, MM, DD, HH, MinMin, SS]]
+Where YYYY stands for Year, MM stands for month, DD stands for date, HH for hours, MinMin for minutes, SS for secands.
+Year should be in the range of  1970 - 2099, Month in the range of 0 -12, Date between 1-31, Hours should be in the range of 0 - 23, Minutes and Secands in the range of 0 - 59.
+Output would be an numpy array which will have unix time corresponding to the input array
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+numpy and python
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Download the file in the same folder.
+In your main file at the beginning
+import unixTimestamp as uts
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+and call the function as
+uts.calculate_sec(data)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Inspiration:gotu0000@gmail.com
+
 
